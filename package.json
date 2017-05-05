@@ -5,7 +5,14 @@
   "main": "index.js",
   "scripts": {
     "start": "babel-node index.js",
+     "apidoc": "apidoc -i routes/ -o public/apidoc",
     "test": "NODE_ENV=test mocha test/**/*.js"
+  },
+  "apidoc": {
+    "name": "Node Task API - Documentation",
+    "template": {
+	"forceLanguage": "en"	
+    }
   },
   "author": "amies",
   "dependencies": {
@@ -22,6 +29,7 @@
     "sqlite3": "^3.1.1"
   },
   "devDependencies": {
+    "apidoc": "^0.15.1",
     "babel-register": "^6.5.2",
     "chai": "^3.5.0",
     "mocha": "^2.5.3",
