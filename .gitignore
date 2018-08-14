@@ -1,3 +1,4 @@
 node_modules/*
 ntask.sqlite
-logs/*
+logs/*.*
+public/**/*.*
